@@ -1,4 +1,21 @@
-body { height:100vh; color: #1f1f1f; background: linear-gradient(to bottom,#bada55,#c0ffee); }
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-28.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+	align-items: center;
+}
 
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
