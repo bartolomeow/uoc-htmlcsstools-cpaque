@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+	align-items: flex-start;
+	margin-left: 10%;
+	height: 100vh;
+}
+
+body {
+	background-image: url('/bg-main.d85cc6ff.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+header a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 5em;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float:left;
+}
+
+nav a {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	background-color: #3498db;
+	opacity: 0.8;
+	transition: 0.3s;
+	border-radius: 30px;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+nav a:hover, nav a:active {
+	opacity: 1;
+	background-color: #4792C4;
+}
+
+.title {
+	display: inline-block;
+}
+
+.clip-hidec3po {
+	transition: 0.4s cubic-bezier(1, -1, 0, 2);
+	-webkit-clip-path: polygon(75% 0, 100% 0, 100% 100%, 45% 100%);
+	        clip-path: polygon(75% 0, 100% 0, 100% 100%, 45% 100%);
+	max-width: 200px;
+	filter: invert(100%);
+	float: left;
+	clear: left;
+}
+
+.clip-hidec3po:hover {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    margin: 20px;
+    max-height: 100px;
+    float: left;
+    
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4792C4;
+}
+
+footer p {
+    float: right;
+    padding: 10px;
+    margin-top: -30px;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

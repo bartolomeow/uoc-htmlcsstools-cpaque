@@ -10,6 +10,7 @@ body {
 	background-position: left;
 	background-size: cover;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 250px;
 }
 
 header {
@@ -48,6 +49,11 @@ nav a:hover, nav a.active {
 	background-color: #4792C4;
 }
 
+.logo-header {
+    max-height: 30px;
+    filter: invert(100%);
+}
+
 .fullscreen {
     margin: 20px 15%;
     background-color: rgba(255,255,255,0.9);
@@ -74,7 +80,12 @@ nav a:hover, nav a.active {
 }
 
 .imgright {
-    max-width: 100%;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.imgleft {
+    max-width: 90%;
     border-radius: 10px;
 }
 
@@ -83,6 +94,21 @@ nav a:hover, nav a.active {
     max-height: 250px;
     margin: 10px;
     border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.lasers {
+    padding: 40px;
+  transition: 0.5s;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 }
 
 .lista-nobullets {
@@ -106,6 +132,38 @@ nav a:hover, nav a.active {
     color: #fff;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    margin: 20px;
+    max-height: 100px;
+    float: left;
+    
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4792C4;
+}
+
+footer p {
+    float: right;
+    padding: 10px;
+    margin-top: -30px;
+}
+
 @media (min-width: 800px) {
     .imgright {
         max-width: 40%;
@@ -121,6 +179,7 @@ nav a:hover, nav a.active {
         clear: left;
         margin: 0px 20px;
         max-height: 200px;
+        border-radius: 10px;
     }
 
     .halfscreen {
